@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/575eeed224.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <h1>Nome: <span contenteditable="true">Spesa</span></h1>
+    <div class="container">
+      <div class="add-task">
+        <input type="text" class="task-input" placeholder="Aggiungi un task" />
+        <button onclick="addTask()">
+          <i class="fa-solid fa-circle-plus"></i>
+        </button>
+      </div>
+      <ul id="task-list"></ul>
+    </div>
+    <i class="fa-solid fa-circle-xmark"></i>
+    <i class="fa-solid fa-pen-to-square"></i>
+
+    <script src="app.js"></script>
+  </body>
+</html>

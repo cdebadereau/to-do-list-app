@@ -15,15 +15,20 @@
     <h1>Nome: <span contenteditable="true">Spesa</span></h1>
     <div class="container">
       <div class="add-task">
-        <input type="text" class="task-input" placeholder="Aggiungi un task" />
-        <button onclick="addTask()">
+        <input
+          type="text"
+          class="task-input"
+          id="task-input"
+          placeholder="Aggiungi un task"
+        />
+        <button onclick="addTask()" class="add-button">
           <i class="fa-solid fa-circle-plus"></i>
         </button>
       </div>
-      <ul id="task-list"></ul>
+      <div class="tasks">
+        <ul id="task-list"></ul>
+      </div>
     </div>
-    <i class="fa-solid fa-circle-xmark"></i>
-    <i class="fa-solid fa-pen-to-square"></i>
 
     <script src="app.js"></script>
   </body>

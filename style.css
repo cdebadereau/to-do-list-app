@@ -4,6 +4,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0 auto;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cdefs%3E%3Cpattern id='bg_pattern' width='100' height='100' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='15' cy='15' r='20' fill='%23ed8877' opacity='0.5'/%3E%3Ccircle cx='85' cy='15' r='20' fill='%23ed8877' opacity='0.5'/%3E%3Ccircle cx='15' cy='85' r='20' fill='%23ed8877' opacity='0.5'/%3E%3Ccircle cx='85' cy='85' r='20' fill='%23ed8877' opacity='0.5'/%3E%3Ccircle cx='0' cy='0' r='10' fill='%233D348B' opacity='0.5'/%3E%3Ccircle cx='100' cy='0' r='10' fill='%233D348B' opacity='0.5'/%3E%3Ccircle cx='0' cy='100' r='10' fill='%233D348B' opacity='0.5'/%3E%3Ccircle cx='100' cy='100' r='10' fill='%233D348B' opacity='0.5'/%3E%3C/pattern%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='white' opacity='0.5'/%3E%3Crect width='100%25' height='100%25' fill='url(%23bg_pattern)' opacity='0.5'/%3E%3C/svg%3E");
 }
@@ -19,20 +20,52 @@ h1 {
   font-size: 17px;
 }
 
-button {
+.add-button {
   padding: 10px 20px;
-  background: rgb(236, 171, 162);
+  background: rgb(205, 241, 195);
   border-radius: 4px;
   border: 1px solid rgb(149, 149, 149);
   font-size: 17px;
   margin-left: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background: rgb(125, 147, 234);
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid rgb(149, 149, 149);
+  font-size: 15px;
+}
+
+.delete-button {
+  background: rgb(234, 165, 165);
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  font-size: 15px;
+}
+
+.tasks {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin-top: 20px;
 }
 
 ul {
   list-style: none;
-  width: 100%;
   padding: 10px;
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul li {
+  padding: 20px;
+  border-bottom: 1px solid rgba(144, 140, 140, 0.242);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
 }

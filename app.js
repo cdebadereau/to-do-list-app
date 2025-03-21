@@ -35,6 +35,13 @@ let time = document.querySelector(".time p");
 time.innerHTML = `${day} ${date} ${month} ${year} <br />
 ${hour}:${minute}`;
 
+if (hour < 10) {
+  hour = `0${hour}`;
+}
+if (minute < 10) {
+  minute = `0${minute}`;
+}
+
 // Lista task
 
 let taskList = document.getElementById("task-list");

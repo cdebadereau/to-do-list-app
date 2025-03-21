@@ -33,7 +33,7 @@ header .time p {
 }
 
 main .to-do-list {
-  background: rgba(255, 255, 255, 0.709);
+  background: rgba(245, 183, 38, 0.315);
   padding: 30px;
   border-radius: 5px;
   width: 300px;
@@ -99,7 +99,7 @@ ul {
 
 ul li {
   padding: 20px;
-  border-bottom: 1px solid rgba(144, 140, 140, 0.242);
+  border-bottom: 1px solid rgba(225, 176, 133, 0.242);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -107,7 +107,7 @@ ul li {
 }
 
 main .notes {
-  background: rgba(255, 255, 255, 0.709);
+  background: rgba(245, 183, 38, 0.315);
   padding: 30px;
   border-radius: 5px;
   width: 100%;

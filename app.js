@@ -1,3 +1,42 @@
+// Tempo
+
+let now = new Date();
+let date = now.getDate();
+let days = [
+  "Domenica",
+  "Lunedì",
+  "Martedì",
+  "Mercoledì",
+  "Giovedì",
+  "Venerdì",
+  "Sabato",
+];
+let day = days[now.getDay()];
+let months = [
+  "Gennaio",
+  "Febbraio",
+  "Marzo",
+  "Aprile",
+  "Maggio",
+  "Giugno",
+  "Luglio",
+  "Agosto",
+  "Settembre",
+  "Ottobre",
+  "Novembre",
+  "Dicembre",
+];
+let month = months[now.getMonth()];
+let year = now.getFullYear();
+let hour = now.getHours();
+let minute = now.getMinutes();
+
+let time = document.querySelector(".time p");
+time.innerHTML = `${day} ${date} ${month} ${year} <br />
+${hour}:${minute}`;
+
+// Lista task
+
 let taskList = document.getElementById("task-list");
 
 function addTask() {
